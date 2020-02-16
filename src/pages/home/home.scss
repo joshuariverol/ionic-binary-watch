@@ -1,0 +1,330 @@
+page-home {
+    //backgroung for the home page
+    ion-content {
+        background: linear-gradient(113deg, #1655c1, #e74a4f,  #3ebffb);
+        background-size: 400% 400%;
+        animation: BackgroundGradient 10s ease infinite;
+    }
+    @keyframes BackgroundGradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%; }
+    }
+
+    //styling for the greeting label
+    .greeting {
+        color:#fefefe;
+        text-align: center;
+        font-size:25px;
+    }
+    //styling for the location Label 
+    .location {
+        color:#fefefe;
+        text-align:center;
+    }
+
+
+    //styling for the am/pm icon and label
+    .ampm-icon {
+        color:#fefefe;
+    }
+    .ampm-label {
+        color:#fefefe;
+        margin-top:15px;
+    }
+
+
+    //hour row styling
+    .hour-row {
+        margin-top:15px;
+    }
+    //css formating for the hour dots and labels
+    .hour-logo {
+        margin-left:-7px;
+        margin-bottom:-30px;
+    }
+    .hour-dot {
+        display:block;
+        height: 20px;
+        width: 35px;
+        border-radius: 15px;
+        margin-top:10px;
+        background-color:#fefefe;//default color. changes when on (styling changes in the home.ts sheet)
+    }
+    .hour-numbers {
+        color:#fefefe;
+        margin-left:10px; 
+        margin-top:13px;       
+    }
+    .dot-row {
+        margin-top:30px;
+    }
+
+
+
+    //css formating for the minute dots and labels
+    .minute-row {
+        margin-top:15px;
+    }
+    .minute-dot {
+        background-color: #fefefe;//default color (style chages in home.ts)
+        display:block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+        margin:auto;
+    }
+    .minute-numbers {
+        color:#fefefe;
+        text-align:center;
+    }
+
+
+    
+    //css formating for the minute dots and labels
+    .second-row {
+        margin-top:15px;
+    }
+    .second-dot {
+        background-color: #fefefe;
+        display:block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+        margin:auto;
+    }
+    .second-numbers {
+        color:#fefefe;
+        text-align:center;
+    }
+    .hoursecond-logo {
+        color:#fefefe;
+        margin-top:5px;
+        width:20px;
+        height:20px;
+    }
+
+
+    //setting styles for resultion for smaller devices
+    @media screen and (min-width: 200px) and (max-width: 320px) {
+        //backgroung for the home page
+        ion-content {
+            background: linear-gradient(113deg, #1655c1, #e74a4f,  #3ebffb);
+            background-size: 400% 400%;
+            animation: BackgroundGradient 10s ease infinite;
+        }
+        @keyframes BackgroundGradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%; }
+        }
+
+        //styling for the greeting label
+        .greeting {
+            color:#fefefe;
+            text-align: center;
+            font-size:15px;
+        }
+        //styling for the location Label 
+        .location {
+            color:#fefefe;
+            text-align:center;
+        }
+
+
+        //styling for the am/pm icon and label
+        .ampm-icon {
+            color:#fefefe;
+        }
+        .ampm-label {
+            color:#fefefe;
+            margin-top:10px;
+        }
+
+
+        //hour row styling
+        .hour-row {
+            margin-top:10px;
+        }
+        //css formating for the hour dots and labels
+        .hour-logo {
+            margin-left:-5px;
+            margin-bottom:-15px;
+        }
+        .hour-dot {
+            display:block;
+            height: 15px;
+            width: 30px;
+            border-radius: 15px;
+            margin-top:5px;
+            background-color:#fefefe;//default color. changes when on (styling changes in the home.ts sheet)
+        }
+        .hour-numbers {
+            color:#fefefe;
+            margin-left:10px; 
+            margin-top:5px;       
+        }
+        .dot-row {
+            margin-top:15px;
+        }
+
+
+
+        //css formating for the minute dots and labels
+        .minute-row {
+            margin-top:15px;
+        }
+        .minute-dot {
+            background-color: #fefefe;//default color (style chages in home.ts)
+            display:block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: relative;
+            margin:auto;
+        }
+        .minute-numbers {
+            color:#fefefe;
+            text-align:center;
+        }
+
+
+        
+        //css formating for the minute dots and labels
+        .second-row {
+            margin-top:15px;
+        }
+        .second-dot {
+            background-color: #fefefe;
+            display:block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: relative;
+            margin:auto;
+        }
+        .second-numbers {
+            color:#fefefe;
+            text-align:center;
+        }
+        .hoursecond-logo {
+            color:#fefefe;
+            margin-top:5px;
+            width:20px;
+            height:20px;
+        }
+    }
+    //setting styles for resultionfor larger devices
+    @media screen and (min-width: 389px) and (max-width: 450px) {
+        //backgroung for the home page
+        ion-content {
+            background: linear-gradient(113deg, #1655c1, #e74a4f,  #3ebffb);
+            background-size: 400% 400%;
+            animation: BackgroundGradient 10s ease infinite;
+        }
+        @keyframes BackgroundGradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%; }
+        }
+
+        //styling for the greeting label
+        .greeting {
+            color:#fefefe;
+            text-align: center;
+            font-size:40px;
+        }
+        //styling for the location Label 
+        .location {
+            color:#fefefe;
+            text-align:center;
+        }
+
+
+        //styling for the am/pm icon and label
+        .ampm-icon {
+            color:#fefefe;
+        }
+        .ampm-label {
+            color:#fefefe;
+            margin-top:20px;
+            font-size:20px;
+        }
+
+
+        //hour row styling
+        .hour-row {
+            margin-top:20px;
+        }
+        //css formating for the hour dots and labels
+        .hour-logo {
+            margin-left:-5px;
+            margin-bottom:-15px;
+        }
+        .hour-dot {
+            display:block;
+            height: 25px;
+            width: 50px;
+            border-radius: 15px;
+            margin-top:25px;
+            background-color:#fefefe;//default color. changes when on (styling changes in the home.ts sheet)
+        }
+        .hour-numbers {
+            color:#fefefe;
+            margin-left:10px; 
+            margin-top:30px;       
+        }
+        .dot-row {
+            margin-top:25px;
+        }
+
+
+
+        //css formating for the minute dots and labels
+        .minute-row {
+            margin-top:25px;
+        }
+        .minute-dot {
+            background-color: #fefefe;//default color (style chages in home.ts)
+            display:block;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: relative;
+            margin:auto;
+        }
+        .minute-numbers {
+            color:#fefefe;
+            text-align:center;
+        }
+
+
+        
+        //css formating for the minute dots and labels
+        .second-row {
+            margin-top:25px;
+        }
+        .second-dot {
+            background-color: #fefefe;
+            display:block;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            position: relative;
+            margin:auto;
+        }
+        .second-numbers {
+            color:#fefefe;
+            text-align:center;
+        }
+        .hoursecond-logo {
+            color:#fefefe;
+            margin-top:-3px;
+            width:20px;
+            height:20px;
+        }
+        
+    }
+}

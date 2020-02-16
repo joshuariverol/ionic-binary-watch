@@ -1,0 +1,134 @@
+<!--
+    Joshua Riverol
+    Elisha Cobb
+    Gian Dominguez
+    This is a binary watch that tells the time from your system time or 5 different cities from arounf the world.
+    this app was created for our programming 2 class. its is responsive for most celluar phones with slight variations
+    in font size and item spacing.
+    CS206 (Programming II)
+    19th of February 2019
+    Corozal Junior College
+  -->
+<ion-content padding>
+  
+  <!--content of the page set out in a grid-->
+  <ion-grid>
+    <!--greeting for the user. pulling a variable from the home.ts sheet-->
+    <ion-row>
+      <ion-label class="greeting">Good {{this.greeting}}</ion-label>
+    </ion-row>
+
+    <!--display for the city that is being viewed.-->
+    <ion-row>
+      <ion-label class="location"><ion-icon name="globe" (click)="gotolocation()"></ion-icon>   {{this.city}}</ion-label>
+    </ion-row>
+    
+
+    <ion-row class="hour-row">
+      <!--where the hours will be displayes-->
+      <ion-col>
+        <ion-row class="hour-logo">
+          <img src="../../assets/imgs/hourlogo.png" style="zoom: 0.075;"/>
+        </ion-row>
+
+        <ion-row class="dot-row">
+          <div [ngStyle]="{'background-color': this.hour8}" class="hour-dot"></div>
+          <ion-label class="hour-numbers">8</ion-label>
+        </ion-row>
+
+        <ion-row class="dot-row">
+          <div [ngStyle]="{'background-color': this.hour4}" class="hour-dot"></div>
+          <ion-label class="hour-numbers">4</ion-label>
+        </ion-row>
+
+        <ion-row class="dot-row">
+          <div [ngStyle]="{'background-color': this.hour2}" class="hour-dot"></div>
+          <ion-label class="hour-numbers">2</ion-label>
+        </ion-row>
+
+        <ion-row class="dot-row">
+          <div [ngStyle]="{'background-color': this.hour1}" class="hour-dot"></div>
+          <ion-label class="hour-numbers">1</ion-label>
+        </ion-row>
+      </ion-col>
+
+      <!--column for central diplay-->
+      <ion-col>
+        <ion-row>
+          <ion-col>
+
+          </ion-col>
+          <!--column displaying the am/pm  and icon-->
+          <ion-col>
+            <ion-label class="ampm-label"><ion-icon class="ampm-icon" name="{{icon}}"> {{ampm}}</ion-icon></ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+
+    <!--the minute row-->
+    <script></script>
+    <ion-row class="minute-row">
+      <ion-col class="hoursecond-logo">
+        <img src="../../assets/imgs/minutelogo.png" style="zoom: 2; margin-left:-6x; margin-top:2px;"/>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute1}" class="minute-dot"></div>  1</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute2}" class="minute-dot"></div>  2</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute4}" class="minute-dot"></div>  4</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute8}" class="minute-dot"></div>  8</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute16}" class="minute-dot"></div>  16</ion-label>
+       </ion-col>
+
+      <ion-col>
+        <ion-label class="minute-numbers"><div [ngStyle]="{'background-color': this.minute32}" class="minute-dot"></div>  32</ion-label>
+      </ion-col>
+    </ion-row>
+
+
+    <!--the minute row-->
+    <ion-row class="seconds-row">
+      <ion-col class="hoursecond-logo">
+        <img src="../../assets/imgs/secondlogo.png" style="zoom: 2; margin-left:-6x; margin-top:2px;"/>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second1}" class="second-dot"></div>  1</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second2}" class="second-dot"></div>  2</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second4}" class="second-dot"></div>  4</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second8}" class="second-dot"></div>  8</ion-label>
+      </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second16}" class="second-dot"></div>  16</ion-label>
+       </ion-col>
+
+      <ion-col>
+        <ion-label class="second-numbers"><div [ngStyle]="{'background-color': this.second32}" class="second-dot"></div>  32</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

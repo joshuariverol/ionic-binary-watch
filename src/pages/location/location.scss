@@ -1,0 +1,27 @@
+
+page-location {
+    ion-title {
+        text-align: center !important;
+    }
+    ion-card {
+        position: relative;
+        text-align: center;
+        height:180px;
+    }
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 1.75em;
+        width: 100%;
+        color: #fefefe;
+
+
+      }
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fefefe;
+      }
+}

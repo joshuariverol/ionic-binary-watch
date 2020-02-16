@@ -1,0 +1,56 @@
+
+<!--
+  Generated template for the LocationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Select a Location</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--card to select system time-->
+  <ion-card (click)="getsystime()">
+    <img src="../../assets/imgs/system.png"/>
+    <div class="card-title">Use Your System's Time</div>
+  </ion-card>
+  <!--card to select New york time-->
+  <ion-card (click)="getnytime()">
+    <img src="../../assets/imgs/newyork.png"/>
+    <div class="card-title">New York</div>
+    <div class="card-subtitle">GMT-5 hours</div>
+  </ion-card>
+  <!--card to select Belize time-->
+  <ion-card (click)="getbztime()">
+    <img src="../../assets/imgs/belizecity.png"/>
+    <div class="card-title">Belize</div>
+    <div class="card-subtitle">GMT-6 hours</div>
+  </ion-card>
+  <!--card to select London time-->
+  <ion-card (click)="getlntime()">
+    <img src="../../assets/imgs/london.png"/>
+    <div class="card-title">London</div>
+    <div class="card-subtitle">GMT</div>
+  </ion-card>
+  <!--card to select Rio de Janeiro time-->
+  <ion-card (click)="getrjtime()">
+    <img src="../../assets/imgs/riodejaneiro.png"/>
+    <div class="card-title">Rio de Janeiro</div>
+    <div class="card-subtitle">GMT-2 hours</div>
+  </ion-card>
+  <!--card to select Shanghai time-->
+  <ion-card (click)="getshtime()">
+    <img src="../../assets/imgs/shanghai.png"/>
+    <div class="card-title">Shanghai</div>
+    <div class="card-subtitle">GMT+8 hours</div>
+  </ion-card>
+  <!--card to select Sydney time-->
+  <ion-card (click)="getsytime()">
+    <img src="../../assets/imgs/sydney.png"/>
+    <div class="card-title">Sydney</div>
+    <div class="card-subtitle">GMT+11 hours</div>
+  </ion-card>
+</ion-content>
